@@ -19,6 +19,10 @@ ul{
 	text-transform: uppercase;
 	cursor: pointer;
 }
+
+.red{
+    color: red !important;
+}
 .be-red{
 	background-color: rgb(200,50,50);
 }

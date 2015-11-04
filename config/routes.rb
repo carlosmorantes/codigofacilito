@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
   
+  devise_for :users
   root 'welcome#index'
 
   resources :articles
 =begin RESTful
   get "/articles" index
   post "/articles" create
-  delete "/articles" delete
+  delete "/articles/:id" destroy
   get "/articles/:id" show
   get "/articles/new" new
   get "/articles/:id/edit" edit
