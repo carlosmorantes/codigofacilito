@@ -1,7 +1,7 @@
 class ArticlesController < ApplicationController
 	#before_action :validate_user, except: [:show, :index]
-	before_action :authenticate_user!, except: [:show, :index] # devise (callback) tiene por defecto este helper para ser usado en los controladores, en vez de lo anterior
-	before_action :set_article, except: [:index, :new, :create]
+	before_action :authenticate_user!, except: [:show,:index] # devise (callback) tiene por defecto este helper para ser usado en los controladores, en vez de lo anterior
+	before_action :set_article, except: [:index, :new, :create] # Callback muy popular
 
 	#GET /articles
 	def index
